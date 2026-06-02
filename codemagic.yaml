@@ -1,12 +1,18 @@
 workflows:
   ios-workflow:
-    name: SPOTY ME iOS Build
+    name: SPOTY ME iOS TestFlight
     max_build_duration: 60
     instance_type: mac_mini_m2
+
+    integrations:
+      app_store_connect: App Manager
 
     environment:
       xcode: latest
       cocoapods: default
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: me.spoty.app
 
     scripts:
       - name: Install CocoaPods dependencies
@@ -14,17 +20,24 @@ workflows:
           cd src
           pod install
 
-      - name: Build iOS app
+      - name: Set up code signing
         script: |
           cd src
-          xcodebuild build \
-            -workspace "SPOTY ME.xcworkspace" \
-            -scheme "SPOTY ME" \
-            -destination 'generic/platform=iOS' \
-            CODE_SIGNING_ALLOWED=NO
+          xcode-project use-profiles
+
+      - name: Build signed IPA
+        script: |
+          cd src
+          xcode-project build-ipa \
+            --workspace "SPOTY ME.xcworkspace" \
+            --scheme "SPOTY ME"
 
     artifacts:
-      - src/build/ios/**/*.ipa
-      - src/build/ios/**/*.app
-      - src/build/ios/**/*.xcarchive
+      - src/build/ios/ipa/*.ipa
       - /tmp/xcodebuild_logs/*.log
+      - src/build/ios/archive/*.xcarchive
+
+    publishing:
+      app_store_connect:
+        auth: integration
+        submit_to_testflight: true
