@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>SPOTY.ME utilise l’appareil photo uniquement si vous choisissez d’ajouter une photo liée à une place de stationnement ou de scanner une carte bancaire lors d’un paiement sécurisé.</string>
+	<string>SPOTY.ME utilise le microphone uniquement si vous choisissez d’enregistrer ou d’envoyer un contenu audio lié à une place de stationnement.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>SPOTY.ME utilise votre position pour afficher les places disponibles autour de vous et confirmer l’emplacement exact d’une place que vous souhaitez signaler, par exemple une place que vous êtes en train de libérer.</string>
 	<key>NSCameraUsageDescription</key>
-	<string>Capture Video by user request</string>
+	<string>SPOTY.ME utilise l’appareil photo uniquement si vous choisissez d’ajouter une photo liée à une place de stationnement ou de scanner une carte bancaire lors d’un paiement sécurisé.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
@@ -32,7 +32,7 @@
 			<key>CFBundleURLName</key>
 			<string></string>
 			<key>CFBundleURLSchemes</key>
-			<array />
+			<array/>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
@@ -106,6 +106,5 @@
 	<array>
 		<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	</array>
-	
 </dict>
 </plist>
