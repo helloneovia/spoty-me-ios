@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Capture Audio by user request</string>
+	<string>SPOTY.ME utilise l’appareil photo uniquement si vous choisissez d’ajouter une photo liée à une place de stationnement ou de scanner une carte bancaire lors d’un paiement sécurisé.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Track current location by user request</string>
+	<string>SPOTY.ME utilise votre position pour afficher les places disponibles autour de vous et confirmer l’emplacement exact d’une place que vous souhaitez signaler, par exemple une place que vous êtes en train de libérer.</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Capture Video by user request</string>
 	<key>CFBundleDevelopmentRegion</key>
