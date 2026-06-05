@@ -20,15 +20,10 @@ workflows:
           cd src
           pod install
 
-      - name: Update build number
-        script: |
-          cd src
-          agvtool new-version -all $CM_BUILD_NUMBER
-
       - name: Set up code signing
         script: |
           cd src
-          xcode-project use-profiles --project "SPOTY ME.xcodeproj"
+          xcode-project use-profiles
 
       - name: Build signed IPA
         script: |
