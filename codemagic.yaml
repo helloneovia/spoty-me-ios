@@ -20,6 +20,13 @@ workflows:
           cd src
           pod install
 
+      - name: Update build number
+        script: |
+          cd src
+          BUILD_NUMBER=${CM_BUILD_NUMBER}
+          echo "Setting iOS build number to $BUILD_NUMBER"
+          perl -i -pe "s/CURRENT_PROJECT_VERSION = [0-9]+;/CURRENT_PROJECT_VERSION = $BUILD_NUMBER;/g" "SPOTY ME.xcodeproj/project.pbxproj"
+
       - name: Set up code signing
         script: |
           cd src
