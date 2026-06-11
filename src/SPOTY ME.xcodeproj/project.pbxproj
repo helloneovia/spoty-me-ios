@@ -133,10 +133,11 @@
 			};
 			buildConfigurationList = CD89F884237E9D9200C436A1 /* Build configuration list for PBXProject "SPOTY ME" */;
 			compatibilityVersion = "Xcode 11.0";
-			developmentRegion = en;
+			developmentRegion = fr;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				fr,
 				Base,
 			);
 			mainGroup = CD89F880237E9D9200C436A1;
@@ -372,7 +373,7 @@
 				CODE_SIGN_ENTITLEMENTS = "SPOTY ME/Entitlements/Entitlements.plist";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "SPOTY ME/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -381,7 +382,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.spoty.app";
 				PRODUCT_NAME = "SPOTYME";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -400,7 +401,7 @@
 				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_ENTITLEMENTS = "SPOTY ME/Entitlements/Entitlements.plist";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "SPOTY ME/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -409,7 +410,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.spoty.app";
 				PRODUCT_NAME = "SPOTYME";
 				SUPPORTS_MACCATALYST = YES;
